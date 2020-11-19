@@ -48,6 +48,13 @@ const App = props => {
           user={user}
           dispatch={dispatch}
         />
+        <PrivateRoute
+          path="/assignment"
+          exact
+          component={Home}
+          user={user}
+          dispatch={dispatch}
+        />
 
         {/*  <Route path="/home" component={Home} /> */}
         <Route path="/login" component={Login} />
